@@ -59,6 +59,7 @@ sudo pacman -S sl --noconfirm --needed
 sudo pacman -S ufetch-arco-git --noconfirm --needed
 sudo pacman -S youtube-dl --noconfirm --needed
 sh scripts/install-caffeine-ng-v*.sh
+sh scripts/install-vtop-v*.sh
 ##### Add Nemo here after testing it ######
 
 ### System
