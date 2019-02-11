@@ -15,7 +15,7 @@ sh scripts/install-hblock-v*.sh
 sh scripts/install-lightdm-webkit-v*.sh
 sh scripts/install-nvidia-v*.sh
 sh scripts/install-powerline-v*.sh
-sh scripts/install-swapfile-v*.sh ####>>> Need to figure out /etc/fstab entry
+sh scripts/install-swapfile-v*.sh
 sh scripts/install-ufw-v*.sh  
 sh scripts/install-zsh-v*.sh
 

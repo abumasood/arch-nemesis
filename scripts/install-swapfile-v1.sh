@@ -14,11 +14,7 @@ sudo dd if=/dev/zero of=/swapfile bs=100M count=80
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
-###sudo echo "/swapfile none swap defaults 0 0" >> /etc/fstab
-#sudo cp /etc/fstab /tmp/fstab.bak
-#sudo cp /etc/fstab /tmp/fstab.new
-#sudo cp /etc/fstab.new	/etc/fstab
-#sudo echo "/swapfile none swap defaults 0 0" >> /tmp/fstab.new
+echo "/swapfile none swap defaults 0 0" | sudo tee -a /etc/fstab
 sudo swapon --show
 
 echo "################################################################"
