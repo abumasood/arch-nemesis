@@ -9,6 +9,11 @@ set -e
 #
 ##################################################################################################################
 
+
+echo "################################################################"
+echo "####                Essential Tools                       ######"
+echo "################################################################"
+
 ### Core System Configurations
 sh scripts/install-cups-v*.sh  ###>>> Need to install Brother HL-2070N printer
 sh scripts/install-hblock-v*.sh
@@ -18,9 +23,10 @@ sh scripts/install-powerline-v*.sh
 sh scripts/install-swapfile-v*.sh
 sh scripts/install-ufw-v*.sh  
 sh scripts/install-zsh-v*.sh
+sh scripts/000-use-all-cores-makepkg-conf-v3.sh
 
 
-echo "Cloning Github Repos"
+echo "##### Cloning Github Repos #####"
 mkdir $HOME/DATA
 cd $HOME/DATA
 git clone https://github.com/abumasood/myfiles
@@ -29,9 +35,9 @@ git clone https://github.com/abumasood/mybackgrounds
 echo "################################################################"
 echo "###################    Git Clone Done      ######################"
 echo "################################################################"
-echo "Copy bashrc-personal"
+echo "##### Copy bashrc-personal #####"
 cp -f ~/DATA/myfiles/bashrc/bashrc-personal ~/.bashrc-personal
-echo "Copying Variety Favorites"
+echo "##### Copying Variety Favorites #####"
 cp -f ~/DATA/mybackgrounds/wallpapers/* ~/.config/variety/Favorites/
 
 
