@@ -60,34 +60,31 @@ sudo pacman -S ranger --noconfirm --needed
 sudo pacman -S sl --noconfirm --needed
 sudo pacman -S ufetch-arco-git --noconfirm --needed
 sudo pacman -S youtube-dl --noconfirm --needed
-sh scripts/install-caffeine-ng-v*.sh
+sudo pacman -S gtop --noconfirm --needed
 sh scripts/install-vtop-v*.sh
-##### Add Nemo here after testing it ######
+sh scripts/install-nemo-v*.sh
+sh scripts/install-caffeine-ng-v*.sh
 
 ### System
-#sudo yay -S  --noconfirm --needed
 ###sudo pacman -S qt5ct --noconfirm --needed
-sudo pacman -S linux-headers
 sudo pacman -S expac --noconfirm --needed
-sudo pacman -S gtop --noconfirm --needed
-###sudo pacman -S vtop --noconfirm --needed
-
+sudo pacman -S linux-headers
 
 ### Virtualbox
-#sudo pacman -S virtualbox --noconfirm --needed
-sudo pacman -S virtualbox-host-modules-arch --noconfirm --needed
-sudo pacman -S open-vm-tools --noconfirm --needed
+sh scripts/install-virtualbox-host-v*.sh
+#sudo pacman -S virtualbox-guest-modules-arch --noconfirm --needed
 
-### Configure VM Tools
-#sudo systemctl enable vmtoolsd
-#sudo systemctl start vmtoolsd
+### VMWare Workstation
+sh scripts/install-vmware-workstation-v*.sh
+sudo pacman -S open-vm-tools --noconfirm --needed
+sudo systemctl enable vmtoolsd
+sudo systemctl start vmtoolsd
 
 ### Chat and Social
 sudo pacman -S discord --noconfirm --needed
 
 #sudo pacman -S  --noconfirm --needed
 
-
 echo "################################################################"
-echo "####                APPS INSTALLED                        ######"
+echo "####  System Apps/Configs have been Installed.  ALL DONE!!! ####"
 echo "################################################################"
