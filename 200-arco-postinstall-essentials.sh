@@ -6,7 +6,6 @@
 #
 ##################################################################################################################
 
-
 echo "################################################################"
 echo "####                Essential Tools                       ######"
 echo "################################################################"
@@ -29,7 +28,7 @@ echo "##### Installing Firewall #####"
 sh scripts/install-ufw-v*.sh  
 echo "##### Installing ZSH #####"
 sh scripts/install-zsh-v*.sh
-ech "### Enable SSHD Service ###"
+echo "### Enable SSHD Service ###"
 sudo systemctl enable sshd.service
 sudo systemctl start sshd.service
 

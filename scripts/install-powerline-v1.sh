@@ -16,11 +16,12 @@ sudo pacman -S python-powerline --noconfirm --needed
 
 ### Configure Powerline for vim
 cp -f ~/DATA/myfiles/powerline/vim/.vimrc ~/
-sudo cat ~/DATA/myfiles/powerline/vim/etc-vimrc >> /etc/vimrc
+cat ~/DATA/myfiles/powerline/vim/etc-vimrc | sudo tee -a /etc/vimrc
+echo "### /etc/vimrc has been updated ###"
 
 ### Configure Powerline for tmux
-cp -f ~/DATA/myfiles/powerline/vim/.tmux.conf ~/
-
+cp -f ~/DATA/myfiles/powerline/tmux/.tmux.conf ~/
+echo "### .tmux.conf has been copied to home folder ###"
 
 echo "################################################################"
 echo "#########          Powerline is now configured        ##########"

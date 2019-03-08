@@ -11,7 +11,7 @@ set -e
 
 sudo pacman -S lightdm --noconfirm --needed
 #sudo pacman -S lightdm-webkit-theme-aether --noconfirm --needed
-sh ./install-lightdm-aether-v*.sh
+sh scripts/install-lightdm-aether-v*.sh
 sudo pacman -S lightdm-webkit-theme-archlinux --noconfirm --needed
 sudo pacman -S lightdm-webkit2-greeter --noconfirm --needed
 

@@ -41,7 +41,7 @@ sh scripts/install-caffeine-ng-v*.sh
 ### System
 ###sudo pacman -S qt5ct --noconfirm --needed
 sudo pacman -S expac --noconfirm --needed
-sudo pacman -S linux-headers
+sudo pacman -S linux-headers --noconfirm --needed
 
 ### Virtualbox
 sh scripts/install-virtualbox-host-v*.sh
