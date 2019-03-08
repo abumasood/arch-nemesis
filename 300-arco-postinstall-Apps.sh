@@ -37,6 +37,7 @@ sudo pacman -S gtop --noconfirm --needed
 sh scripts/install-vtop-v*.sh
 sh scripts/install-nemo-v*.sh
 sh scripts/install-caffeine-ng-v*.sh
+sh scripts/install-polybar-v*.sh
 
 ### System
 ###sudo pacman -S qt5ct --noconfirm --needed
