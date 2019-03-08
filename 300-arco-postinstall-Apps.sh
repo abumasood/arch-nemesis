@@ -11,43 +11,6 @@ set -e
 
 
 echo "################################################################"
-echo "####                Essential Tools                       ######"
-echo "################################################################"
-
-echo "##### Installing CUPs #####"
-sh scripts/install-cups-v*.sh  ###>>> Need to install Brother HL-2070N printer
-echo "##### Installing hblock service #####"
-sh scripts/install-hblock-v*.sh
-echo "##### Installing Lightdm Webkit #####"
-sh scripts/install-lightdm-webkit-v*.sh
-echo "##### Installing Nvidia #####"
-sh scripts/install-nvidia-v*.sh
-echo "##### Installing Powerline #####"
-sh scripts/install-powerline-v*.sh
-echo "##### Configuring swapfile #####"
-sh scripts/install-swapfile-v*.sh
-echo "##### Installing Firewall #####"
-sh scripts/install-ufw-v*.sh  
-echo "##### Installing ZSH #####"
-sh scripts/install-zsh-v*.sh
-echo "##### Configure system to use ALL core to Makepkg #####"
-sh scripts/000-use-all-cores-makepkg-conf-v3.sh
-
-
-echo "##### Cloning Github Repos #####"
-if [ ! -d "$HOME/DATA" ]; then
-	mkdir $HOME/DATA  
-fi
-cd $HOME/DATA
-git clone https://github.com/abumasood/myfiles
-git clone https://github.com/abumasood/mybackgrounds
-echo "##### Git Clone Done #####"
-echo "##### Copying bashrc-personal #####"
-#cp -f ~/DATA/myfiles/bashrc/bashrc-personal ~/.bashrc-personal
-#cp -f ~/DATA/mybackgrounds/wallpapers/* ~/.config/variety/Favorites/
-
-
-echo "################################################################"
 echo "####                INSTALLING APPS                       ######"
 echo "################################################################"
 
@@ -96,5 +59,5 @@ sudo pacman -S discord --noconfirm --needed
 #sudo pacman -S  --noconfirm --needed
 
 echo "################################################################"
-echo "####  System Apps/Configs have been Installed.  ALL DONE!!! ####"
+echo "####                  Apps Installed                        ####"
 echo "################################################################"

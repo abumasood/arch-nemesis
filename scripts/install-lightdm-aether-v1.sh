@@ -5,21 +5,11 @@ set -e
 # GitHub    :   https://github.com/abumasood
 ##################################################################################################################
 #
-#   Install Virtualbox (Host) with Extension Pack on Arch Linux
+#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
+#
 ##################################################################################################################
 
-echo "################################################################"
-echo "####               Installing Virtulabox (HOST)           ######"
-echo "################################################################"
-
-sudo pacman -S virtualbox-host-modules-arch --noconfirm --needed
-sudo pacman -S virtualbox --noconfirm --needed
-
-echo "################################################################"
-echo "####        Installing Virtulabox Extension Pack          ######"
-echo "################################################################"
-
-package="virtualbox-ext-oracle"
+package="lightdm-webkit-theme-aether"
 
 #----------------------------------------------------------------------------------
 

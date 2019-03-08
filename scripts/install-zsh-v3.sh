@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+#set -e
 ##################################################################################################################
 # Author	:	Erik Dubois
 # Website	:	https://www.erikdubois.be
@@ -246,6 +246,8 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 ' >>  ~/.zshrc
 
 cat settings/aliases >> ~/.zshrc
+
+sudo chsh -s /bin/zsh $USER
 
 echo "################################################################"
 echo "####  ZSH INSTALLED - Confirm aliases are correct         ######"

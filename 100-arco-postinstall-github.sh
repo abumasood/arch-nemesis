@@ -5,17 +5,19 @@ set -e
 # GitHub    :   https://github.com/abumasood
 ##################################################################################################################
 #
-#   Install lightdm-webkit
+#   Main Script to run post Arcolinux install to install/configure applications and settings
 #
 ##################################################################################################################
 
-sudo pacman -S lightdm --noconfirm --needed
-#sudo pacman -S lightdm-webkit-theme-aether --noconfirm --needed
-sh ./install-lightdm-aether-v*.sh
-sudo pacman -S lightdm-webkit-theme-archlinux --noconfirm --needed
-sudo pacman -S lightdm-webkit2-greeter --noconfirm --needed
 
+echo "##### Cloning Github Repos #####"
+if [ ! -d "$HOME/DATA" ]; then
+	mkdir $HOME/DATA  
+fi
+cd $HOME/DATA
+git clone https://github.com/abumasood/myfiles
+git clone https://github.com/abumasood/mybackgrounds
 
 echo "################################################################"
-echo "#########          lightdm is now configure           ##########"
+echo "####                Github Repos Cloned                   ######"
 echo "################################################################"
