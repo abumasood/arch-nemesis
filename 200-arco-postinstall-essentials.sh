@@ -31,6 +31,9 @@ sh scripts/install-zsh-v*.sh
 echo "### Enable SSHD Service ###"
 sudo systemctl enable sshd.service
 sudo systemctl start sshd.service
+echo "### Installing Additional Drivers"
+sh scripts/install-wd719x-firmware-v*.sh
+sh scripts/install-wd719x-firmware-v*.sh
 
 echo "################################################################"
 echo "####                Essential Tools Done                  ######"
