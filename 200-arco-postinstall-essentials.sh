@@ -34,6 +34,8 @@ sudo systemctl start sshd.service
 echo "### Installing Additional Drivers"
 sh scripts/install-wd719x-firmware-v*.sh
 sh scripts/install-wd719x-firmware-v*.sh
+echo "### Speeding up Reboot"
+sh scripts/940-disable-lvm2-reduce-shutdown-time-v*.sh
 
 echo "################################################################"
 echo "####                Essential Tools Done                  ######"
